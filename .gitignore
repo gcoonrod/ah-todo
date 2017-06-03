@@ -1,1 +1,5 @@
 node_modules/
+.env
+*.log
+actionheroClient.js
+actionheroClient.min.js

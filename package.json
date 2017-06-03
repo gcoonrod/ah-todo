@@ -1,29 +1,31 @@
 {
-  "author" : "Greg Coonrod <greg.coonrod@gmail.com>",
-  "name" : "ah-todo",
-  "description" : "TODO Example Project for ActionHero",
-  "version" : "0.0.1",
-  "engines" : {
+  "author": "Greg Coonrod <greg.coonrod@gmail.com>",
+  "name": "ah-todo",
+  "description": "TODO Example Project for ActionHero",
+  "version": "0.0.1",
+  "license" : "MIT",
+  "engines": {
     "node": ">=6.0.0"
   },
-  "dependencies" : {
-    "actionhero" : "17.0.2",
-    "ws" : "latest",
-    "fakeredis" : "latest",
-    "ioredis" : "latest"
+  "dependencies": {
+    "actionhero": "17.0.2",
+    "dotenv": "^4.0.0",
+    "fakeredis": "latest",
+    "ioredis": "latest",
+    "ws": "latest"
   },
-  "devDependencies" : {
-    "cross-env" : "latest",
-    "chai" : "latest",
-    "dirty-chai" : "latest",
-    "mocha" : "latest",
-    "standard" : "latest"
+  "devDependencies": {
+    "cross-env": "latest",
+    "chai": "latest",
+    "dirty-chai": "latest",
+    "mocha": "latest",
+    "standard": "latest"
   },
-  "scripts" : {
-    "start" : "actionhero start",
-    "actionhero" : "actionhero",
+  "scripts": {
+    "start": "node -r dotenv/config ./node_modules/.bin/actionhero start",
+    "actionhero": "actionhero",
     "pretest": "standard",
-    "test" : "cross-env NODE_ENV=test mocha"
+    "test": "cross-env NODE_ENV=test mocha"
   },
   "standard": {
     "ignore": [
