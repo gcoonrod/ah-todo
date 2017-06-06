@@ -3,3 +3,4 @@ node_modules/
 *.log
 actionheroClient.js
 actionheroClient.min.js
+database.sqlite

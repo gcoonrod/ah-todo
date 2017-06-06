@@ -3,15 +3,17 @@
   "name": "ah-todo",
   "description": "TODO Example Project for ActionHero",
   "version": "0.0.1",
-  "license" : "MIT",
+  "license": "MIT",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=5.0.0"
   },
   "dependencies": {
     "actionhero": "17.0.2",
     "dotenv": "^4.0.0",
     "fakeredis": "latest",
     "ioredis": "latest",
+    "sequelize": "^3.30.4",
+    "sqlite3": "^3.1.8",
     "ws": "latest"
   },
   "devDependencies": {
