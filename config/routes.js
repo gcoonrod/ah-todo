@@ -26,7 +26,9 @@ exports['default'] = {
       ]
 
       ---------------------- */
-
+      post: [
+        { path: '/todo', action: 'createTodo' }
+      ]
     }
   }
 }
